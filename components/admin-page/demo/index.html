@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+  <head>
+    <title>admin-page demo</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1, user-scalable=yes">
+    <script src="../../webcomponentsjs/webcomponents-lite.js"></script>
+
+    <link rel="import" href="../../paper-toolbar/paper-toolbar.html">
+    <link rel="import" href="../admin-page.html">
+    <style>
+      body {
+        background: white;
+      }
+    </style>
+  </head>
+  <body>
+    <paper-toolbar style="background: #616161 !important;">
+		  <div class="title" style="text-align: center">admin toolbox</div>
+		</paper-toolbar>
+    <admin-page components='{"cellservices":false, "celladmin":false, 
+                          "spacetokens":false, "poolusage":false, 
+                          "poolqueues":false, "poolgroups":false, 
+                          "poolqueueplots":false, "poolselectionsetup":false,
+                          "pooladmin":false, "tapetransferqueue":false, 
+                          "billingplots":false, "alarms":false}'></admin-page>
+  </body>
+</html>
